@@ -19,7 +19,7 @@ img {
 
 .top-half {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 10px 40px;
 }
 
@@ -81,7 +81,7 @@ ul {
 
 .cards {
     display: flex;
-    gap: 50px;
+    gap: 80px;
     justify-content: center;
     align-content: center;
     padding: 20px;
@@ -91,20 +91,18 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: baseline;
-    width: 150px;
-    height: 200px;
     gap: 20px;
+    min-width: 0px;
 }
 
 .card > img {
-    max-width: 150px;
-    max-height: 200px;
     border-radius: 25px;
     border: 1px solid #3882f6;
+    max-width: 200px;
+    min-width: 0px;
 }
 
 .subtext {
-    width: 100px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
