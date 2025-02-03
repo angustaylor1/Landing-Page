@@ -35,7 +35,7 @@ body, .bottom-half {
 .header {
     background-color: #1f2937;
     color: white;
-    flex-direction: column;
+    justify-content: space-around;
     flex: 1;
     width: 1000px;
 }
@@ -70,12 +70,13 @@ img {
 
 }
 
-button {
+.header-button {
     background-color: #3882f6;
     color: white;
     width: 100px;
-    height: 80px;;
+    height: 50px;;
     border-radius: 25px;
+    justify-content: center;
 }
 
 .header-text {
@@ -169,4 +170,42 @@ ul {
     font-size: 24px;
     font-weight: 900px;
     margin-left: auto;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    background-color: white;
+    width: 1000px;
+    padding: 100px;
+}
+
+.cta-container {
+    background-color: #3882f6;
+    color: white;
+    display: flex;
+    height: 100px;
+    width: 800px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 50px;
+}
+
+.cta-head {
+    font-size: 24px;
+    font-weight: 900px;
+
+}
+
+.cta-sub {
+    font-size: 16px;
+}
+
+.cta-button {
+    border: 1px solid white;
+    height: 50px;
+
 }
