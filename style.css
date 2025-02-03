@@ -1,33 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+}
+
+body, .header, .header-text, .information {
+    flex-direction: column;
+}
+
+.subtext, body, .cards {
+    justify-content: center;
+}
+
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
+    flex-direction: column;
+    margin: 0;
+    border: 0;
 }
+
+.bottom-half {
+    justify-content: space-around;
+}
+
+body, .bottom-half {
+    align-items: center;
+}
+
 
 .header {
     background-color: #1f2937;
     color: white;
-    display: flex;
     flex-direction: column;
     flex: 1;
-
+    width: 800px;
 }
 
 img {
     height: 200px;
-    width: 400px;
+    width: 300px;
+    min-width: 0px;
 }
 
 .top-half {
-    display: flex;
-    justify-content: space-around;
-    padding: 10px 40px;
+    padding: 10px 70px;
+    justify-content: flex-start;
 }
 
 .bottom-half {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     padding: 48px;
+    gap: 20px;
 
 }
 
@@ -35,25 +61,36 @@ img {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
+    min-width: 350px;
 }
 
 .header-sub {
     font-size: 18px;
     color: #e5e7eb;
+
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+    width: 100px;
+    height: 80px;;
+    border-radius: 25px;
 }
 
 .header-text {
-    display: flex;
-    flex-direction: column;
     height: 200px;
     width: 300px;
 }
+
 ul {
- list-style: none;
- display: flex;
- gap: 16px;
- margin: 0;
- padding: 0;
+    list-style: none;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    font-size: 18px;
+    color: #e5e7eb
 }
 
 .headlogo {
@@ -65,11 +102,10 @@ ul {
 .information {
     background-color: white;
     color: black;
-    display: flex;
-    flex-direction: column;
     text-align: center;
     flex: 1;
     padding: 20px;
+    width: 800px;
 }
 
 .info-head {
@@ -80,11 +116,11 @@ ul {
 }
 
 .cards {
-    display: flex;
-    gap: 80px;
-    justify-content: center;
+    gap: 50px;
     align-content: center;
     padding: 20px;
+    min-width: 0px;
+    max-width: 100%
 }
 
 .card {
@@ -98,12 +134,10 @@ ul {
 .card > img {
     border-radius: 25px;
     border: 1px solid #3882f6;
-    max-width: 200px;
-    min-width: 0px;
+    height: 120px; 
+    width: 120px;
 }
 
 .subtext {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
