@@ -38,6 +38,7 @@ body, .bottom-half {
     justify-content: space-around;
     flex: 1;
     width: 1000px;
+    flex: 1;
 }
 
 img {
@@ -47,7 +48,7 @@ img {
 }
 
 .top-half {
-    padding: 10px 70px;
+    padding: 48px;
     justify-content: flex-start;
 }
 
@@ -118,6 +119,7 @@ ul {
     flex: 1;
     padding: 20px;
     width: 1000px;
+    flex: 1;
 }
 
 .info-head {
@@ -164,6 +166,7 @@ ul {
     align-items: center;
     width: 1000px;
     padding: 48px 60px;
+    flex: 1;
 }
 
 .quote-contain {
@@ -190,6 +193,7 @@ ul {
     background-color: white;
     width: 1000px;
     padding: 100px;
+    flex: 1;
 }
 
 .cta-container {
